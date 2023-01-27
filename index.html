@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/icon-4.png" />
+    <title>wala lang gud ahahaha</title>
+    <meta name="description" content="web development for beginner" />
+    <meta name="keywords" content="html, css, javascript" />
+    <meta name="author" content="jdm web designer" />
+    <link rel="shortcut icon" href="images/pic-1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- ------------------------- header section ------------------------- -->
+    <section class="header">
+      <div class="logo">
+        <a href="#"><span>H</span>uhu</a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="active"><a href="#">home</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#package">package</a></li>
+          <li><a href="#booking">booking</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <div class="icons-box">
+          <i class="fas fa-search" id="search-btn"></i>
+        </div>
+        <div class="icons-box">
+          <i class="fas fa-user" id="user-btn"></i>
+        </div>
+        <div class="icons-box">
+          <i class="fas fa-moon" id="darkmodeBtn" onclick="darkTheme()"></i>
+        </div>
+      </div>
+      <!-- ------------------------- hamburger menu section ------------------------- -->
+      <!-- <i class="fas fa-bars-staggered" id="menu-btn"></i> -->
+      <div id="hamburger-menu">
+        <div class="bars"></div>
+      </div>
+    </section>
+    <!-- ------------------------- search container section ------------------------- -->
+    <div class="search-container">
+      <form action="">
+        <div class="search-box">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Looking for something?"
+          />
+          <span><input type="submit" value="search" /></span>
+        </div>
+      </form>
+    </div>
+    <!-- ------------------------- login container section ------------------------- -->
+    <div class="login-container">
+      <form action="">
+        <div class="form-closed">
+          <i class="fas fa-times" id="form-closed-btn"></i>
+        </div>
+        <h3>Login</h3>
+        <div class="email-container">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="box"
+            placeholder="Email or phone number"
+            required
+          />
+          <span><i class="fa-solid fa-at" id="email-at"></i></span>
+        </div>
+        <div class="pass-container">
+          <input
+            type="password"
+            name="password"
+            id="inputPass"
+            class="box"
+            placeholder="Password"
+          />
+          <span onclick="myFunction()">
+            <i id="hide-1" class="fa fa-eye"></i>
+            <i id="hide-2" class="fa fa-eye-slash"></i>
+          </span>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" name="checkbox" id="remember-me" />
+        <label for="checkbox">Remember me</label>
+        <p>forgot password? <a href="#">recover account</a></p>
+        <p>don't have an account? <a href="#">create account now</a></p>
+      </form>
+    </div>
+    <!-- ------------------------- home section ------------------------- -->
+    <section class="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slider-1.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>Explore, Discover, Travel</span>
+              <h3>Travel arround the world.</h3>
+              <a href="package.html" class="btn">Discover more</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slider-5.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>Explore, Discover, Travel</span>
+              <h3>Never lose your sense of wonder.</h3>
+              <a href="package.html" class="btn">Discover more</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slider-3.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>Explore, Discover, Travel</span>
+              <h3>Make your tour worthwhile.</h3>
+              <a href="package.html" class="btn">Discover more</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slider-4.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>Explore, Discover, Travel</span>
+              <h3>Enjoy every places you visit.</h3>
+              <a href="package.html" class="btn">Discover more</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide slide"
+            style="background: url(images/home-slider-2.jpg) no-repeat"
+          >
+            <div class="content">
+              <span>Explore, Discover, Travel</span>
+              <h3>Discover new place on earth.</h3>
+              <a href="package.html" class="btn">Discover more</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- ------------------------- services section ------------------------- -->
+    <section class="services" id="services">
+      <h1 class="heading-title">
+        <div class="heading-title-box">
+          <span>s</span>
+        </div>
+        <div class="heading-title-box">
+          <span>e</span>
+        </div>
+        <div class="heading-title-box">
+          <span>r</span>
+        </div>
+        <div class="heading-title-box">
+          <span>v</span>
+        </div>
+        <div class="heading-title-box">
+          <span>i</span>
+        </div>
+        <div class="heading-title-box">
+          <span>c</span>
+        </div>
+        <div class="heading-title-box">
+          <span>e</span>
+        </div>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="images/services-1.png" />
+          <h3>adventure</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+            quibusdam voluptate iusto quos distinctio, praesentium perferendis?
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/services-5.png" />
+          <h3>tour guide</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+            quibusdam voluptate iusto quos distinctio, praesentium perferendis?
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/services-2.png" />
+          <h3>trekking</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+            quibusdam voluptate iusto quos distinctio, praesentium perferendis?
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/services-4.png" />
+          <h3>bonfire</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+            quibusdam voluptate iusto quos distinctio, praesentium perferendis?
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/services-6.png" />
+          <h3>off road</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+            quibusdam voluptate iusto quos distinctio, praesentium perferendis?
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/services-3.png" />
+          <h3>camping</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+            quibusdam voluptate iusto quos distinctio, praesentium perferendis?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- -------------------------about section ------------------------- -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about-img.jpg" />
+      </div>
+      <div class="content">
+        <h3>about us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          accusantium aliquam fugiat cum soluta porro nisi minima asperiores
+          ipsa!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+          tempora repellat ipsum a aliquam molestias magni placeat, officiis
+          inventore similique officia nostrum. Deserunt inventore praesentium
+          alias, quam.
+        </p>
+        <a href="#about" class="btn">read more</a>
+      </div>
+    </section>
+    <!-- ------------------------- package section ------------------------- -->
+    <section class="package" id="package">
+      <h1 class="heading-title">
+        <div class="heading-title-box">
+          <span>p</span>
+        </div>
+        <div class="heading-title-box">
+          <span>a</span>
+        </div>
+        <div class="heading-title-box">
+          <span>c</span>
+        </div>
+        <div class="heading-title-box">
+          <span>k</span>
+        </div>
+        <div class="heading-title-box">
+          <span>a</span>
+        </div>
+        <div class="heading-title-box">
+          <span>g</span>
+        </div>
+        <div class="heading-title-box">
+          <span>e</span>
+        </div>
+      </h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-1.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-2.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-3.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-4.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-5.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-6.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-7.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-8.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-9.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-10.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-11.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="package-img">
+            <img src="images/img-12.jpg" />
+          </div>
+          <div class="content">
+            <h3>adventure & tour</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur quae blanditiis, architecto consequatur minus esse
+              magnam.
+            </p>
+            <a href="#book" class="btn">book now</a>
+          </div>
+        </div>
+      </div>
+      <div class="load-more"><span class="btn">load more</span></div>
+    </section>
+    <!-- ------------------------- offer section ------------------------- -->
+    <section class="offer">
+      <div class="content">
+        <h3>we offer good quality service</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          quis maiores modi molestias rem expedita ab, tempora ducimus sunt
+          molestiae, esse id, optio facere sequi praesentium beatae? Non
+          deleniti quo magni exercitationem?
+        </p>
+      </div>
+      <div class="icons-container">
+        <i class="fas fa-map"></i>
+        <span>top destination</span>
+        <i class="fas fa-hand-holding-hand"></i>
+        <span>affordable price</span>
+        <i class="fas fa-headset"></i>
+        <span>24/7 guide services</span>
+      </div>
+      <a href="#book" class="btn">book now</a>
+    </section>
+    <!-- ------------------------- booking form section ------------------------- -->
+    <section class="booking" id="booking">
+      <h1 class="heading-title">
+        <div class="heading-title-box">
+          <span>b</span>
+        </div>
+        <div class="heading-title-box">
+          <span>o</span>
+        </div>
+        <div class="heading-title-box">
+          <span>o</span>
+        </div>
+        <div class="heading-title-box">
+          <span>k</span>
+        </div>
+        <div class="heading-title-box">
+          <span>i</span>
+        </div>
+        <div class="heading-title-box">
+          <span>n</span>
+        </div>
+        <div class="heading-title-box">
+          <span>g</span>
+        </div>
+      </h1>
+      <div class="booking-container">
+        <form action="">
+          <div class="form-container">
+            <!-- input name  -->
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <span><i class="fas fa-user-edit"></i></span>
+          </div>
+          <div class="form-container">
+            <!-- input email  -->
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email or phone number"
+              required
+            />
+            <span><i class="fas fa-envelope"></i></span>
+          </div>
+          <div class="form-container">
+            <!-- input contact num  -->
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="Your contact number"
+              required
+            />
+            <span><i class="fas fa-phone"></i></span>
+          </div>
+          <div class="form-container">
+            <!-- input address  -->
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Your address"
+              required
+            />
+            <span><i class="fas fa-location-dot"></i></span>
+          </div>
+          <div class="form-container">
+            <!-- input place want to visit  -->
+            <input
+              type="text"
+              name="text"
+              id="text"
+              placeholder="Place want to visit"
+              required
+            />
+            <span><i class="fas fa-map"></i></span>
+          </div>
+          <div class="form-container">
+            <!-- input number of guest  -->
+            <input
+              type="number"
+              name="number"
+              id="number"
+              placeholder="How many people"
+              max="300"
+              required
+            />
+            <span><i class="fas fa-people-group"></i></span>
+          </div>
+          <div class="form-container">
+            <!-- input date  -->
+            <span class="booking-par">Day of Arrivals</span>
+            <input type="date" name="date" id="date" required />
+          </div>
+          <div class="form-container">
+            <!-- input date  -->
+            <span class="booking-par">Day of Leaving</span>
+            <input type="datetime-local" name="date" id="date" required />
+          </div>
+        </form>
+        <input
+          type="submit"
+          name="booking"
+          value="submit booking"
+          class="btn"
+        />
+      </div>
+    </section>
+    <!-- ------------------------- footer section ------------------------- -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Quick Links</h3>
+          <a href="#"><i class="fas fa-angle-right"></i> Home</a>
+          <a href="#"><i class="fas fa-angle-right"></i> Service</a>
+          <a href="#"><i class="fas fa-angle-right"></i> About</a>
+          <a href="#"><i class="fas fa-angle-right"></i> Package</a>
+          <a href="#"><i class="fas fa-angle-right"></i> Booking</a>
+        </div>
+        <div class="box">
+          <h3>Extra Links</h3>
+          <a href="#"><i class="fas fa-angle-right"></i> Feedback</a>
+          <a href="#"><i class="fas fa-angle-right"></i> Ask questions</a>
+          <a href="#"><i class="fas fa-angle-right"></i> Community</a>
+          <a href="#"><i class="fas fa-angle-right"></i> Terms of Use</a>
+          <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a target="_blank" href="https://www.facebook.com/jeffern.malinao.90/"
+            ><i class="fab fa-facebook-f"></i>&nbsp; Facebook</a
+          >
+          <a href="#"><i class="fab fa-youtube"></i> YouTube</a>
+          <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+          <a href="#"><i class="fab fa-linkedin-in"></i> Linkedin</a>
+          <a href="#"><i class="fab fa-tiktok"></i> Tiktok</a>
+        </div>
+        <div class="box">
+          <h3>Get in Touch</h3>
+          <a href="#"><i class="fas fa-phone"></i>&nbsp; +63 931-7348-750</a>
+          <a href="#"
+            ><i class="fas fa-envelope"></i> Jeff_handsome@gmail.com</a
+          >
+          <a href="#"><i class="fas fa-phone"></i>&nbsp; +63 912-7872-055</a>
+          <a href="#"><i class="fab fa-yahoo"></i> Jeff_lavs@yahoo.com</a>
+          <a href="#"
+            ><i class="fas fa-location-dot"></i>&nbsp; Philippines - Davao -
+            8105</a
+          >
+        </div>
+      </div>
+      <hr />
+      <div class="footer-author-credit">
+        <p><span>JDM Web Desinger</span> | All rights reserve &copy;2022</p>
+      </div>
+    </section>
+
+    <!-- ------------------------- script section ------------------------- -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
