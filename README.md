@@ -1,2 +1,2 @@
-# huhutravelphilippines
-# this website is built for self-practice purposes only
+# huhu rakk travel philippines
+# this website is made just for self-practice purposes only.
